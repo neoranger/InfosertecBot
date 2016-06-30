@@ -62,8 +62,10 @@ def command_ayuda(m):
 def command_help(message):
     markup = types.InlineKeyboardMarkup()
     itembtnneo = types.InlineKeyboardButton('NeoRanger', url="telegram.me/NeoRanger")
+    itembtnariel = types.InlineKeyboardButton('Arielmcorg', url="telegram.me/arielmcorg")
     itembtnrepo = types.InlineKeyboardButton('Repo Github', url="http://github.com/neoranger/NeoBot")
     markup.row(itembtnneo)
+    markup.row(itembtnariel)
     markup.row(itembtnrepo)
     bot.send_message(message.chat.id, "Choose one supporter:", reply_markup=markup)
 
